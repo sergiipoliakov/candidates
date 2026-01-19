@@ -10,7 +10,7 @@
 
 2. Create a .env file and set the variable:
 
-   ```env
+   env
    DATABASE_URL=[Connection String]
    ```
 
