@@ -1,0 +1,12 @@
+node_modules
+.DS_Store
+.idea
+logs
+package-lock.json
+yarn.lock
+.env
+instances/*
+!instances/default/
+dist
+*.logs.txt
+

@@ -1,0 +1,23 @@
+@use '../../styles/color' as *
+
+.no-data
+    border: 1px solid $default-border-color
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 80px
+    border-radius: 8px
+    flex-direction: column
+    gap: 24px
+    background-color: $wrapper-background-color
+    @media screen and (max-width: 375px)
+        padding: 48px
+
+    &__icon-wrapper
+        border-radius: 12px
+        background-color: $first-font-color
+        border: 1px solid transparent
+    &__text
+        color: $first-font-color
+        text-transform: uppercase
+        font-size: 12px

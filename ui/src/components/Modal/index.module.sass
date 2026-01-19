@@ -1,0 +1,61 @@
+@use '../../styles/color.sass'  as *
+@use '../../styles/media' as *
+
+.modal 
+    position: fixed
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    height: 100%
+    width: 100%
+    background-color: rgba(0, 0, 0, 0.1)
+    opacity: 0
+    pointer-events: none
+    transition: all 0.3s
+    z-index: 2
+    backdrop-filter: blur(5px)
+    display: flex
+    align-items: center
+    justify-content: center
+    &--active
+        z-index: 1000
+        opacity: 1
+        pointer-events: all
+    &__content 
+        width: 64%
+        height: max-content
+        padding: 48px 48px 34px
+        position: relative  
+        margin: 0 auto
+        transform: scale(0.5)
+        transition: all 0.3s
+        box-shadow: 0px 3.5px 9px rgba(0, 0, 0, 0.09)
+        max-height: 90%
+        border-radius: 16px
+        background-color: $wrapper-background-color
+        @media (max-width: $width-laptop-l)
+            padding: 32px
+            padding: 40px
+        @media (max-width: $width-tablet)
+            margin: 0 16px
+            padding: 24px
+            width: 90%
+
+        @media (max-width: $width-mobile)
+            padding: 24px 16px
+
+        &--active
+            transform: scale(1)
+    &__button-close
+        position: absolute
+        top: 28px
+        right: 28px
+        z-index: 3
+        @media (max-width: $width-tablet)
+            top: 14px
+            right: 16px
+
+    &__button-close-icon
+        &:hover 
+            color: $first-font-color
