@@ -1,4 +1,4 @@
-
+Вот версия твоего README на английском, аккуратно оформленная:
 
 ````markdown
 # Project
@@ -63,3 +63,5 @@
    yarn run build
    yarn run preview
    ```
+
+```
