@@ -1,17 +1,5 @@
 import  { Sequelize } from 'sequelize';
 
-// export default new Sequelize(
-//   process.env.DB_MANE as string,
-//   process.env.DB_USER as string,
-//   process.env.DB_PASSWORD as string,
-//   {
-//     dialect: 'postgres',
-//     port: Number(process.env.DB_PORT),
-//     host: process.env.DB_HOST
-
-//   }
-// )
-
 const databaseUrl = process.env.DATABASE_URL;
 
 if (!databaseUrl) {

@@ -6,7 +6,7 @@ import routes from './src/routes/candidate.routes'
 import errorMiddleware from './src/middlewares/error.middleware';
 
 import sequelize from './src/db';
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 8000
 
 
 const app = express();

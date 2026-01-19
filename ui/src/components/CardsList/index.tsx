@@ -29,7 +29,7 @@ const Cards = observer(() => {
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
-      store.getCandidates({ search, status, page, limit: 8 });
+      store.getCandidates({ search, status, page });
     }, 500);
     return () => clearTimeout(timeoutId);
   }, [search, status, page]);

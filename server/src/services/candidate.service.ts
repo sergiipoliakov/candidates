@@ -55,7 +55,7 @@ class СandidateService {
       search,
       sort = 'ASC',
       page = 1,
-      limit = 10,
+      limit = 8,
     } = query;
 
     const where: any = {};
@@ -80,6 +80,7 @@ class СandidateService {
         through: { attributes: [] },
         as: 'skills',
       },
+      distinct: true,
       order: [['id', sort]],
 
     });
