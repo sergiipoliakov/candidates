@@ -6,9 +6,9 @@
 1. Go to the server directory:
    ```bash
    cd server
-````
+```
 
-2. Create a `.env` file and set the variable:
+2. Create a .env file and set the variable:
 
    ```env
    DATABASE_URL=[Connection String]
